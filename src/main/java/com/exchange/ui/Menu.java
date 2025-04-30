@@ -16,13 +16,13 @@ public class Menu {
             option = scanner.nextLine().trim().toUpperCase();
 
             switch (option) {
-                case "1" -> convert("USD", "");
-                case "2" -> convert("", "USD");
+                case "1" -> convert("USD", "ARS");
+                case "2" -> convert("ARS", "USD");
                 case "3" -> convert("USD", "BRL");
                 case "4" -> convert("BRL", "USD");
-                case "5" -> convert("USD", "");
-                case "6" -> convert("", "USD");
-                case "7" -> convert("BRL", "BTC");
+                case "5" -> convert("USD", "COP");
+                case "6" -> convert("COP", "USD");
+                case "7" -> convert("USD", "EUR");
                 case "8" -> convert("BRL", "EUR");
                 case "9" -> convert("EUR", "BRL");
                 case "S" -> System.out.println("Saindo... 👋");
@@ -33,13 +33,13 @@ public class Menu {
 
     private void printMenu() {
         System.out.println("\n=== CONVERSOR DE MOEDAS ===");
-        System.out.println("1.Dólar → Peso Argentino");
+        System.out.println("1. Dólar → Peso Argentino");
         System.out.println("2. Peso Argentino → Dólar");
         System.out.println("3. Dólar → Real Brasileiro");
         System.out.println("4. Real Brasileiro → Dólar");
         System.out.println("5. Dólar → Peso Colombiano");
         System.out.println("6. Peso Colombiano → Dólar");
-        System.out.println("7. Real Brasileiro → Biticoin");
+        System.out.println("7. Dólar → Euro");
         System.out.println("8. Real Brasileiro → Euro");
         System.out.println("9. Euro → Real Brasileiro");
         System.out.println("S. Sair");
